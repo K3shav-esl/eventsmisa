@@ -1,0 +1,18 @@
+.navbar-bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.navbar-h1{
+    color: #F1E27E;
+    font-size: 1.4rem;
+}
+.navbar-border{
+    border-bottom: .5px solid #aaaaaa;
+    box-shadow: 0px 3px 40px rgba(183, 183, 183, .1);
+}
+
+

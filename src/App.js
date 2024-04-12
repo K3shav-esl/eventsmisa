@@ -6,11 +6,12 @@ import Otp from './screens/signup/Otp';
 import ForgotPass from './screens/signup/ForgotPass';
 import VerifyEmail from './screens/signup/VerifyEmail';
 import ResetPass from './screens/signup/ResetPass';
+import Home from './screens/home/Home';
 
 function App() {
   return (
     <>
-      <ResetPass />
+      <Home />
     </>
   );
 }
