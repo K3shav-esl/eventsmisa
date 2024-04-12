@@ -1,9 +1,10 @@
 import React from 'react'
 import './Login.css'
+import Google from '../../assets/photos/google.png'
 
 const Login = () => {
     return (
-        <div className='login p-5'>
+        <div className='login container '>
             <div className='login-headers'>
                 <div className='login-h1'>
                     Welcome to
@@ -12,30 +13,43 @@ const Login = () => {
                     Events Misa
                 </div>
             </div>
+            <br />
             <div className='login-desc1'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci venenatis luctus vitae viverra accumsan augue risus. Vulputate orci amet
             </div>
 
-            <div>
-                <input type="email" />
-                <input type="password" />
+            <div className='login-input-box'>
+                <input type="email" placeholder='Email' />
+                <br />
+                <input type="password" placeholder='Password' />
             </div>
 
-            <button>
+            <button className='login-btn'>
                 Login
             </button>
-            <div>
-                Don't have an account?
-                <a>
-                    Sign up
-                </a>
-            </div>
-            <div>
-                or
-            </div>
-            <div>
-                Continue with google
-            </div>
+            <br />
+            
+            <section>
+                <div>
+                    Don't have an account?
+                    <a className='px-2'>
+                        Sign up
+                    </a>
+                </div>
+                <div style={{
+                    marginTop: 10,
+                    marginBottom: 15
+                }}>
+                    or
+                </div>
+                <div className='login-google-box'>
+                    <div className='login-google'>
+                        <img src={Google} className='google-icon'
+                        />
+                        Continue with google
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
