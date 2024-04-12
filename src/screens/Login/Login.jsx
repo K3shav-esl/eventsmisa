@@ -17,33 +17,38 @@ const Login = () => {
     const [pass, setPass] = useState('');
 
     return (
-        <div className='container'>
-            <br/>
-            <div className='login '>
-                <div className='login-headers'>
-                    <div className='login-h1'>
-                        Welcome to
-                    </div>
-                    <div className='login-h2'>
-                        Events Misa
-                    </div>
+        <div className='login container '>
+            <div className='login-headers'>
+                <div className='login-h1'>
+                    Welcome to
                 </div>
-                <br />
-                <div className='login-desc1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci venenatis luctus vitae viverra accumsan augue risus. Vulputate orci amet
+                <div className='login-h2'>
+                    Events Misa
                 </div>
+            </div>
+            <br />
+            <div className='login-desc1'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci venenatis luctus vitae viverra accumsan augue risus. Vulputate orci amet
+            </div>
 
             <div className='login-input-box'>
-                <input type="email" placeholder='Email' />
+                <input type="email" placeholder='Email' value={user} onChange={(e) => {
+                    e.preventDefault();
+                    setUser(e.target.value);
+                }} />
                 <br />
-                <input type="password" placeholder='Password' />
+                <input type="password" placeholder='Password'  value ={pass} onChange={(e) => {
+                    e.preventDefault();
+                    setPass(e.target.value);
+                    
+                }}/>
             </div>
 
             <button className='login-btn'>
                 Login
             </button>
             <br />
-            
+
             <section>
                 <div>
                     Don't have an account?
