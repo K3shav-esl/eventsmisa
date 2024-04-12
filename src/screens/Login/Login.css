@@ -43,6 +43,7 @@
     padding: 12px 23px;
     font-size: 1.4rem;
     border-radius: 18px;
+    border: none;
     background-image: linear-gradient(to right, #F1E27E, #C6CA01);
     min-width: 175px;
     margin: 23px;

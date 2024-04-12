@@ -1,8 +1,21 @@
 import React from 'react'
+
+import { useRef, useState, useEffect } from 'react';
+
+
 import './Login.css'
 import Google from '../../assets/photos/google.png'
 
+import useLocalStorage from '../../hooks/useLocalStorage';
+
+
 const Login = () => {
+
+    const [user, setUser] = useState('katik'); //usestate
+
+
+    const [pass, setPass] = useState('');
+
     return (
         <div className='login container '>
             <div className='login-headers'>
@@ -19,16 +32,23 @@ const Login = () => {
             </div>
 
             <div className='login-input-box'>
-                <input type="email" placeholder='Email' />
+                <input type="email" placeholder='Email' value={user} onChange={(e) => {
+                    e.preventDefault();
+                    setUser(e.target.value);
+                }} />
                 <br />
-                <input type="password" placeholder='Password' />
+                <input type="password" placeholder='Password'  value ={pass} onChange={(e) => {
+                    e.preventDefault();
+                    setPass(e.target.value);
+                    
+                }}/>
             </div>
 
             <button className='login-btn'>
                 Login
             </button>
             <br />
-            
+
             <section>
                 <div>
                     Don't have an account?
