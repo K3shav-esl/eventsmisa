@@ -1,0 +1,72 @@
+.founder-head{
+color: #23D7FF;
+letter-spacing: 10px;
+font-size: 1.2rem;
+}
+
+.about-h2{
+    color: white;
+}
+
+.founder-img{
+    max-height: 175px;
+    display: block;
+    border-radius: 18px;
+    /* max-width: 150px; */
+}
+
+.founder-card{
+    display: flex;
+    text-align: left;
+    max-width: 250px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.founder-card-frame{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.founder-text{
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+}
+.founder-sub{
+    color: #ababab;
+    font-weight: 200;
+    font-size: 0.8rem;
+
+}
+
+.help-button-frame{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-button-frame button{
+    
+    margin: 0.8rem 0;
+    border: none;
+    background-color: #2f2f2f;
+
+    min-width: 282px;
+    min-height: 54px;
+    border-radius: 18px;
+    border: 2px solid #201D1D;
+
+}
+
+.help-text{
+    margin:auto;
+    margin-top: 2rem;
+    max-width: 60vh;
+    text-align: center;
+}
