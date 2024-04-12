@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const Signup = () => {
+
+const ForgotPass = () => {
     return (
         <>
             <div className='container'>
@@ -9,41 +10,28 @@ const Signup = () => {
                 <div className='login '>
                     <div className='login-headers'>
                         <div className='login-h1'>
-                            Creat a new account
+                            Forgot Password
                         </div>
                     </div>
                     <br />
                     <div className='login-desc1'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci venenatis luctus vitae viverra accumsan augue risus. Vulputate orci amet
                     </div>
-
+                </div>
+                <div className='d-flex justify-content-center'>
                     <div className='login-input-box'>
-                        <input type="text" placeholder='Name' />
-                        <br />
                         <input type="email" placeholder='Email' />
                         <br />
-                        <input type="number" placeholder='Mobile Number' />
-                        <br />
-                        <input type="password" placeholder='Password' />
                     </div>
-
+                </div>
+                <div className='d-flex justify-content-center my-3'>
                     <button className='login-btn'>
-                        Sign Up
+                        Send
                     </button>
-                    <br />
-
-                    <section>
-                        <div>
-                            Already have an account?
-                            <a className='px-2'>
-                                Login
-                            </a>
-                        </div>
-                    </section>
                 </div>
             </div>
         </>
     )
 }
 
-export default Signup
+export default ForgotPass

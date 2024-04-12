@@ -19,7 +19,6 @@ const Login = () => {
     return (
         <div className='container'>
             <br/>
-            <br/>
             <div className='login '>
                 <div className='login-headers'>
                     <div className='login-h1'>
