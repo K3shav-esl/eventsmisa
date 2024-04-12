@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 
 const ForgotPass = () => {
+
+    const[email, setEmail] = useState('');
+
     return (
         <>
             <div className='container'>
@@ -20,7 +23,10 @@ const ForgotPass = () => {
                 </div>
                 <div className='d-flex justify-content-center'>
                     <div className='login-input-box'>
-                        <input type="email" placeholder='Email' />
+                        <input type="email" placeholder='Email'  value={email} onChange={(e) => {
+                            e.preventDefault();
+                            setEmail(e.target.value);
+                        }} />
                         <br />
                     </div>
                 </div>

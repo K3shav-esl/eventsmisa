@@ -3,7 +3,8 @@ import OtpInput from 'react-otp-input';
 
 
 const ResetPass = () => {
-    const [otp, setOtp] = useState('');
+    const [pass, setPass] = useState('');
+    const [newPass, setNewPass] = useState('');
     return (
         <>
             <div className='container'>
@@ -20,9 +21,15 @@ const ResetPass = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci venenatis luctus vitae viverra accumsan augue risus. Vulputate orci amet
                     </div>
                     <div className='login-input-box'>
-                        <input type="password" placeholder='Password' />
+                        <input type="password" placeholder='New Password' value={pass} onChange={(e) => {
+e.preventDefault();
+setPass(e.target.value); 
+                        }} />
                         <br />
-                        <input type="password" placeholder='New Password' />
+                        <input type="password" placeholder='Confirm Password' value={newPass} onChange={(e) => {
+e.preventDefault();
+setNewPass(e.target.value); 
+                        }} />
                     </div>
                 </div>
                 <div className='d-flex justify-content-center my-3'>
