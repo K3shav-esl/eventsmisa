@@ -1,0 +1,16 @@
+.login {
+    text-align: center;
+}
+
+.login-headers{
+    line-height: 2rem;
+}
+
+.login-h1{
+    font-size: 1.25rem;
+}
+
+.login-h2{
+    font-size: 2.75rem;
+    color: #F1E27E;
+}
