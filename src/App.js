@@ -15,7 +15,7 @@ import Terms from './screens/About/Terms';
 function App() {
   return (
     <>
-      <Terms />
+      <Login />
     </>
   );
 }
